@@ -12,11 +12,11 @@ int main()
     scanf("%s",telefone);
     char telefonovo[10]="3";
 
-     if(telefone[3]=='-'){
+              if(telefone[3]=='-'){
             strcat(telefonovo,telefone);
-            } if(telefone[4]=='-'){
+            }else if(telefone[4]=='-'){
                 strcpy(telefonovo,telefone);
-            } if(telefone[7]=='\0'){
+            }else if(telefone[7]=='\0'){
                     strncat(telefonovo,telefone,3);
                     strcat(telefonovo,"-");
                     strcat(telefonovo,&telefone[3]);
